@@ -5,6 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20250305204609_OtherEntities.cs" />
+    <Compile Remove="Migrations\20250305204609_OtherEntities.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-SuperHeroi.css" />
     <Content Remove="wwwroot\lib\bootstrap\dist\css\Style.css.css" />
   </ItemGroup>
