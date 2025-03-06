@@ -5,23 +5,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Migrations\20250305204609_OtherEntities.cs" />
-    <Compile Remove="Migrations\20250305204609_OtherEntities.Designer.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-SuperHeroi.css" />
-    <Content Remove="wwwroot\lib\bootstrap\dist\css\Style.css.css" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="2.1.1" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Views\Sellers\" />
   </ItemGroup>
 
 </Project>

@@ -4,23 +4,10 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace SalesWebMvc.Migrations
 {
-    public partial class Initial : Migration
+    public partial class OtherEntities : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.CreateTable(
-                name: "Department",
-                columns: table => new
-                {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    Name = table.Column<string>(nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Department", x => x.Id);
-                });
-
             migrationBuilder.CreateTable(
                 name: "Seller",
                 columns: table => new
@@ -84,9 +71,6 @@ namespace SalesWebMvc.Migrations
 
             migrationBuilder.DropTable(
                 name: "Seller");
-
-            migrationBuilder.DropTable(
-                name: "Department");
         }
     }
 }
